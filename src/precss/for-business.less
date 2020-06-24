@@ -1,0 +1,101 @@
+.section-for-business {
+  //background: indigo;
+  background: url('/img/for-business.png') no-repeat;
+  background-size: cover;
+
+  .for-business {
+    box-sizing: border-box;
+    padding-top: 20px;
+    min-height: 838px;
+    .bl768(min-height, 700px);
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      nav {
+        .for-business__nav {
+          display: flex;
+          font-weight: 400;
+          color: #fff;
+          .bl960(display, none);
+
+          &-item {
+            a {
+              padding-right: 3rem;
+              color: currentColor;
+              text-decoration: none;
+            }
+
+            &_tel {
+              a {
+                padding-right: 0;
+                color: #41FFFF;
+              }
+            }
+          }
+        }
+
+        .for-business__nav-burger {
+          display: none;
+          .bl960(display, block);
+          position: relative;
+          color: #fff;
+
+          &-icon {
+            i {
+              font-size: 28px;
+            }
+          }
+
+          &-dropped {
+            width: 280px;
+            display: none;
+            position: absolute;
+            right: -5px;
+            background: #fff;
+            border-radius: 5px;
+            &-item {
+              a {
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+                .bl960(font-size, 16px);
+                font-weight: 300;
+                color: #333;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__text {
+      width: 65%;
+      .bl667(width, 85%);
+      padding-top: 10%;
+     .bl768(padding-top, 15%);
+     .bl568(padding-top, 20%);
+      margin: 0 auto;
+      text-align: center;
+
+      &-head {
+        font-size: 68px;
+        .bl768(font-size, 52px);
+        .bl568(font-size, 42px);
+        color: #fff;
+      }
+      &-small {
+        padding-top: 20px;
+        .bl768(font-size, 16px);
+        line-height: 1.5;
+        color: #8C93B3;
+
+        a {
+          color: currentColor;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu.eot');
+  src: url('/fonts/Ubuntu.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Ubuntu.woff2') format('woff2'),
+  url('/fonts/Ubuntu.woff') format('woff'),
+  url('/fonts/Ubuntu.ttf') format('truetype'),
+  url('/fonts/Ubuntu.svg#Ubuntu') format('svg');
+}
+
+@font-face {
+  font-family: 'Ubuntu-Light';
+  src: url('/fonts/Ubuntu-Light.eot');
+  src: url('/fonts/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Ubuntu-Light.woff2') format('woff2'),
+  url('/fonts/Ubuntu-Light.woff') format('woff'),
+  url('/fonts/Ubuntu-Light.ttf') format('truetype'),
+  url('/fonts/Ubuntu-Light.svg#Ubuntu-Light') format('svg');
+  font-weight: 300;
+}
+
+body {
+  font-size: 18px;
+  .ubuntu();
+}
+
+.reset();
+
+.wrapper {
+  .wrapper();
+}
+
+.ubuntu() {
+  font-family: 'Ubuntu';
+}
+
+.u-l() {
+  font-family: 'Ubuntu-Light';
+}
+
+.head() {
+  &__text {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    &-head {
+      font-size: 36px;
+      .bl568(font-size, 32px);
+      color: #252C47;
+      font-weight: bold;
+    }
+    &-small {
+      .bl768(font-size, 16px);
+      padding-top: 20px;
+      line-height: 1.5;
+      color: #302F36;
+    }
+  }
+}
+
+@import "smart-grid.less";
+@import "for-business.less";
+@import "services.less";
+@import "decisions.less";
+@import "competences.less";
+@import "languages.less";
+@import "portfolio.less";
+@import "discussion.less";
+@import "footer.less";
+
